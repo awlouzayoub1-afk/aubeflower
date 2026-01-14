@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(159, 159, 159);
+            text-align: center;
+        }
+        #1 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        img {
+            wi
+            dth: 200px;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        image.hover {
+            transform: scale(1.1);
+        }
+        #2, #3, #4 {
+            border: 1px solid rgb(168, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+         body {
+            text-decoration: solid;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-image:url("coisi.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            background-attachment: fixed;
+            color: rgb(0, 0, 0);
+        }
+        button {
+            background-color: black;
+            color: white;
+            justify-content: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1e3a1c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Filtre App</h1>
+    <div id="1">
+    <button>Lunch</button>
+    <button>Dinner</button>
+    <button>Snack</button>
+    <button>Breakfast</button>
+    <button>All</button>
+    </div>
+    <div id="food-items">
+        <div id="2">
+            <img src="bstila.jpg" alt="Bstila" width="20"><br>
+            <h2><strong> BASTILA --- 150DH</strong></h2>
+            <p>La pastilla est un plat traditionnel du Maghreb, constitué d'une sorte de feuilleté (de « feuille » qui se dit ouarka[réf. nécessaire], proche de celle de brik), à base d'oignon, de pigeons (ou de poulet, de pintade, ou encore, plus récemment, de fruits de mer), de persil, de coriandre, d'œuf dur et d'amandes, mélange de sucré et de salé, parfumé à la cannelle. Elle est souvent servie lors des fêtes, juste avant le plat principal.</p>
+        </div>
+        <div id="3">
+            <img src="OIP.webp" alt="Couscous" width="20"><br><br>
+            <h2><strong>COUSCOUS --- 120DH</strong></h2>
+            <p>Le couscous marocain est un plat emblématique à base de semoule cuite à la vapeur, servi avec une riche sauce aux légumes (carottes, navets, courgettes, pois chiches, citrouille) et de la viande (agneau, bœuf, poulet), parfumé aux épices (cumin, gingembre, safran) et aux herbes fraîches (coriandre, persil). Sa préparation implique plusieurs cuissons à la vapeur de la semoule pour la rendre légère et l'accompagnement d'une sauce savoureuse préparée dans le bas du couscoussier. </p>
+        </div>
+        <div id="4">
+            <img src="tajin.jpg" alt="Tajin" width="20"><br><br>
+            <h2><strong>TAJIN ---90DH</strong></h2>
+            <p>Le tajine marocain est un plat mijoté traditionnel à base de viande (agneau, poulet) ou de légumes, cuit lentement dans un plat en terre cuite conique qui concentre les saveurs grâce à la condensation de la vapeur, résultant en un ragoût parfumé d'épices (cumin, gingembre, safran), d'aromates (oignon, ail, coriandre, persil) et souvent des fruits ou légumes (carottes, pommes de terre, olives, citrons confits).</p>
+        </div>
+    </div>
+    <style type="text/css">
+        #food-items {
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+        }
+    </style>
+</body>
+</html>

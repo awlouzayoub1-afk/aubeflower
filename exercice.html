@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset action="" method="get">
+            <label for="name">Nom:</label><br>
+            <input type="text" id="name" name="name" required minlength="3" 
+           pattern="^[A-Z]{2,}$"><br><br>
+            <label for="name">Prénom:</label><br>
+            <input type="text" id="prenom" name="prenom" required pattern="^[A-Z]{5,15}$"><br><br>
+            <label for="email">Adresse Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="@gmail" required ><br><br>
+            <label for="password" >Mot de passe:</label><br>
+            <input required pattern="^\+?\d{8,15}$"
+           title="8 à 15 chiffres, avec ou sans +" type="password" id="password" name="password" required pattern="[0-9]{3}-[A]{1}-[a]{1}-[0]{1}-[#]{1}" ><br><br>
+            <label for="telephone">Numéro de téléphone:</label><br>
+            <input type="tel" id="telephone" name="telephone" required pattern="^(+212)(05|06|07)?(\s)(\d{2})" placeholder="212-3456-7890"><br><br>
+            <label type="date" id="date" nome="date de naissance">Date de naissance:</label><br>
+            <input type="date" id="date" nome="date de naissance" required max="2010-12-31" min="2010-12-31"><br><br>
+            <input type="age" id="age" name="age" required min="16" max="65" placeholder="16-65"><br><br>
+            <label type="link" id="link" name="link">Site web personnel:</label><br>
+            <input type="url" id="link" name="link" required pattern="^https?://.+" placeholder="https://"><br><br>
+            <select for="pays" id="pays" name="pays" required>
+                <option value="">Sélectionnez votre pays</option>
+                <option selected value="maroc">Maroc</option>
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+            </select><br><br>
+            <input required type="radio" id="Féminin" name="genre" value="Féminin" required>
+            <label for="Féminin">Féminin</label>
+            <input required type="radio" id="Masculin" name="genre" value="Masculin" required>
+            <label for="Masculin">Masculin</label><br><br>
+                <label for="checkbox" name="les langues" >Les Langues cunus: </label>
+                <input type="checkbox" id="Latino" name="Lang">Latino
+                <input type="checkbox" id="Germany" name="Lang">Germany
+                <input type="checkbox" id="Tifinagh" name="Lang">Tifinagh
+                <input type="checkbox" id="English" name="Lang">English
+                <input type="checkbox" id="Albanie" name="Lang">Albanie<br><br>
+                <label for="profiel">Profil Professionnel:</label><br>
+                <input type="file" accept="image/png,image/jpg" required><br><br>
+                <label for="msg">Message</label>
+                <input type="text" id="message" required min="20 charset"placeholder="BLA BLA BLA">
+        </label><br>
+        <label type="range" id="range" name="range">Niveau d'experience</label>
+        <input type="range" id="range" name="range" min="0" max="10">
+        <br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+</html>
